@@ -13,6 +13,7 @@
   "scripts": {
     "build": "babel lib -d dist",
     "start": "npm run build && node dist/app.local.js",
+    "start:dev": "babel-watch lib/app.local.js",
     "config": "node ./scripts/configure.js",
     "deconfig": "node ./scripts/deconfigure.js",
     "local": "node scripts/local",
@@ -38,16 +39,30 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "aws-serverless-express": "^3.3.3",
+    "axios": "^0.18.0",
     "body-parser": "^1.17.1",
+    "cheerio": "^1.0.0-rc.3",
     "compression": "^1.6.2",
     "cors": "^2.8.3",
+    "eslint-config-standard": "^12.0.0",
     "express": "^4.15.2",
-    "pug": "^2.0.0-rc.1"
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.0-rc.1",
+    "qs": "^6.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5"
+    "@babel/preset-env": "^7.4.5",
+    "babel-watch": "^7.0.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
