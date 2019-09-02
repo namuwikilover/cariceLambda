@@ -43,6 +43,7 @@
     "aws-serverless-express": "^3.3.3",
     "axios": "^0.18.0",
     "body-parser": "^1.17.1",
+    "caniuse-lite": "^1.0.30000989",
     "cheerio": "^1.0.0-rc.3",
     "compression": "^1.6.2",
     "cors": "^2.8.3",
