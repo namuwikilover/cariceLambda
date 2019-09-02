@@ -54,7 +54,7 @@ Resources:
   AwsServerlessExpressFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://carice-express/db909d34fbd25110f8c92984fc436f08
+      CodeUri: s3://carice-express/ff3cbca9466cdb9c74df458ba929b06d
       Handler: lambda.handler
       MemorySize: 1024
       Role:
